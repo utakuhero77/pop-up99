@@ -1,0 +1,27 @@
+// Define an array of quotes
+const quotes =  [
+"I'm not arguing, I'm just explaining why I'm right."
+"I'm not lazy, I'm just on energy-saving mode."
+"I'm not short, I'm just concentrated awesome."
+"I told my wife she was drawing her eyebrows too high. She looked surprised."
+"I'm not procrastinating, I'm just prioritizing my tasks."
+"I'm not arguing, I'm just passionately expressing my point of view."
+"I'm not clumsy, I'm just performing random gravity checks."
+"I'm not a morning person, I'm a coffee person."
+"I'm not arguing, I'm just using my persuasive voice."
+"I'm not late, everyone else is just early."
+
+
+ 
+];
+
+// Get the HTML elements
+const quoteElement = document.getElementById('quote');
+const generateBtn = document.getElementById('generate-btn');
+const twitterBtn = document.getElementById('twitter-btn');
+
+// Generate a random quote
+function generateQuote() {
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  const quote = quotes[randomIndex];
+  quoteElement
